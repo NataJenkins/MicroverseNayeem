@@ -1,124 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-  <
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <title>Product Landing Page</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-  </head>
-  
-  <body>
-    <div id="page-container"> <!-- Overall Div Page Container -->
-      <header id="header"> <!-- Page Header -->
-        <img id="header-img" src="http://www.free-icons-download.net/images/spark-plug-icon-27844.png" alt="Origin Spark Plugs Logo"/>
-        <h1>Origin Spark Plugs</h1> <!-- Page Title -->
-        <nav id="nav-bar"> <!-- Navigation Bar -->
-          <button><a class="nav-link" href="#features">Features</a></button>
-          <button><a class="nav-link" href="#how-it-works">How It Works</a></button>
-          <button><a class="nav-link" href="#pricing">Pricing</a></button>
-        </nav>
-      </header>
-      <br>
+<html>
+
+
+<!-- 
+Hello Camper!
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+- The freeCodeCamp Team 
+-->
+<head>
     
-      <div class="form-container"> <!-- Form Container -->
-        <h2>Sparks the first time, <u>every time</u></h2> <!-- Form Title -->
-        <p>Subscribe to our mailing list for news alerts and offers!</p>
-        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
-          <input id="email" type="email" name="email" placeholder="Please enter your email:" required/>
-          <input id="submit" type="submit" value="Submit"/>
-        </form>
-      </div>
-      <br>
-   
-      <div class="contents"> <!-- Content Container -->
-        <section id="features"> <!-- Features Section -->
-          <div class="list"> <!-- Quality Feature -->
-            <div class="icon">
-              <i class="material-icons">assignment_turned_in</i>
-            </div>
-            <div class="discription">
-              <h2>Quality</h2>
-              <p>Our number one priority is to provide our customers with the number one spark plug in fitment and performance quality! Our spark plugs are guaranteed to fit your application and start every time you turn the key!</p>
-            </div>
-          </div>
-          <div class="list"> <!-- Technology Feature -->
-            <div class="icon">
-              <i class="material-icons">build</i>
-            </div>
-            <div class="discription">
-              <h2>Technology</h2>
-              <p>We build our spark plugs from premium materials and utilize the latest in fuel burning technology to help maximize your vehicle's fuel efficiency!</p>
-            </div>
-          </div>
-          <div class="list"> <!-- Customer Service Feature -->
-            <div class="icon">
-              <i class="material-icons">settings_phone</i>
-            </div>
-            <div class="discription">
-              <h2>Customer Service</h2>
-              <p>Happy customers keep the engine going and we offer 24/7 customer service to ensure our patrons are 100% satisfied with the fitment and performance of their spark plugs!</p>
-            </div>
-          </div>
-        </section>
-        <br>
-        
-        <section id="how-it-works"> <!-- How It Works Section -->
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dea07uYGkps" frameborder="0" allowfullscreen></iframe>
-        </section>
-        <br>
-        
-        <section id="pricing"> <!-- Pricing Section -->
-          <div id="copper">
-            <div class="option">
-              Copper Plug
-            </div>
-            <img src="http://shop.advanceautoparts.com/wcsstore/CVWEB/Attachment/staticbusinesscontent/image/kh-copper-plug.jpg" alt="Origin Copper Spark Plug" />
-            <h3>$2 Per Plug</h3>
-            <ul>
-              <li>3 year / 100,000 mile warrenty</li>
-              <li>Oxide coating to prevent corrosion</li>
-              <li>Guaranteed start every time!</li>
-            </ul>
-            <button class="btn">Select</button>
-          </div>
-          <div id="platinum">
-            <div class="option">
-              Platinum Plug
-            </div>
-            <img src="http://shop.advanceautoparts.com/wcsstore/CVWEB/Attachment/staticbusinesscontent/image/kh-platinum-plug.jpg" alt="Origin Platinum Spark Plug" />
-            <h3>$5 Per Plug</h3>
-            <ul>
-              <li>5 year / 100,000 mile warrenty</li>
-              <li>Platinum welded disc ensures a better spark</li>
-              <li>Guaranteed start in newer models!</li>
-            </ul>
-            <button class="btn">Select</button>
-          </div>
-          <div id="iridium">
-            <div class="option">
-              Iridium Plug
-            </div>
-            <img src="http://shop.advanceautoparts.com/wcsstore/CVWEB/Attachment/staticbusinesscontent/image/kh-iridium-spark-plug.jpg" alt="Origin Iridium Spark Plug" />
-            <h3>$7 Per Plug</h3>
-            <ul>
-              <li>7 year / 100,000 mile warrenty</li>
-              <li>Iridium welded rod ensures the best spark</li>
-              <li>If this one fails, it's on us!</li>
-            </ul>
-            <button class="btn">Select</button>
-          </div>
-        </section>
-        <br>
-        
-      </div>
-      <br>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  <title>build a Product Landing Page - freecodecamp</title>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header id="header">
+    <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo" id="header-img">
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#video" class="nav-link">How it works</a>
+      <a href="#products" class="nav-link">Pricing</a>
+    </nav>
+  </header>
   
-    </div>
-  </body>
+  <main>
+    <article id="intro">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" name="email" placeholder="enter your email" id="email" required></input>
+        <input type="submit" id="submit" value="Get Started" class="btn">
+      </form>
+    </article>
   
-  <footer> <!-- Footer Section -->
-    <span>&copy; coded by Naeem & Natalia</span>
+    <article id="features">
+      <section class="feature-section">
+        <img src="https://www.qmsuk.com/wp-content/themes/qms2016/assets/images/icons/common/tick.png" class="feature-img">
+        <div>
+          <h2>Premium Materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+      </section>
+      <section class="feature-section">
+        <img src="https://www.qmsuk.com/wp-content/themes/qms2016/assets/images/icons/common/tick.png" class="feature-img">
+        <div>
+          <h2>Fast Shipping</h2>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+      </section>
+      <section class="feature-section">
+        <img src="https://www.qmsuk.com/wp-content/themes/qms2016/assets/images/icons/common/tick.png" class="feature-img">
+        <div>
+          <h2>Quality Assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+      </section>
+    </article>
+  
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
+  
+    <article id="products">
+      <section class="product-section">
+        <div class="product-header">
+          <h2>Tenor Trombone</h2>
+        </div>
+        <div class="product-content">
+          <p class="product-price">$600</p>
+          <ol class="product-desc">
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+        </div>
+        <button class="btn">select</button>
+      </section>
+      <section class="product-section">
+        <div class="product-header">
+          <h2>Bass Trombone </h2>
+        </div>
+        <div class="product-content">
+          <p class="product-price">$900</p>
+          <ol class="product-desc">
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+        </div>
+        <button class="btn">select</button>
+      </section>
+      <section class="product-section">
+        <div class="product-header">
+          <h2>Valve Trombone</h2>
+        </div>
+        <div class="product-content">
+          <p class="product-price">$1200</p>
+          <ol class="product-desc">
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+        </div>
+        <button class="btn">select</button>
+      </section>
+    </article>
+  
+  </main>
+  
+  <footer>
+    <nav id="footer-nav">
+      <a href="" class="nav-link">Privacy</a>
+      <a href="" class="nav-link">Terms</a>
+      <a href="" class="nav-link">Contact</a>
+    </nav>
+    <p>Copyright 2016, Original Trombones</p>
   </footer>
+</body>
+</html>
