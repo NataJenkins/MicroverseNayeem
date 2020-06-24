@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+
+body {
+  background-color: rgb(120,120,120);
+  font-family: 'Francois One', sans-serif;
+  font-style: italic;
+  color: rgb(51,51,51);
+}
+#page-container {
+  position: relative;
+}
+#header {
+  background-color: rgb(243,112,32);
+  position: fixed;
+  top: 0;
+  min-height: 77px;
+  width: 100%;
+  padding: 0px 23px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  @media (max-width: 568px) {
+      flex-wrap: wrap;
+  }
+}
+#header-img {
+  padding: 11px;
+  width:100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 27px;
+  @media (max-width: 568px) {
+    position: relative;
+  }
+}
+h1 {
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#nav-bar {
+  padding: 3px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media (max-width: 568px) {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.nav-link {
+  margin: 23px;
+  padding: 11px;
+  font-size: 19px;
+  color: rgb(51,51,51);
+  @media (max-width: 568px) {
+    flex-direction: column;
+  }
+}
+button {
+  margin: 11px;
+  padding: 7px;
+  background-color: rgb(243,112,32);
+  border: 3px solid rgb(51,51,51);
+  border-radius: 9px;
+  @media (max-width: 568px) {
+    flex-direction: column;
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 127px;
+  margin-bottom: 23px;
+  h2 {
+    margin-bottom: 7px;
+  }
+  p {
+    font-size: 19px;
+  }
+  #email {
+    display: flex;
+    text-align: center;
+    font-size: 19px;
+    margin: 13px;
+    width: 323px;
+    height: 27px;
+    border: 2px solid rgb(243,112,32);
+    border-radius: 9px;
+  }
+  #submit {
+    margin: 13px;
+    padding: 5px;
+    font-size: 19px;
+    background-color: rgb(243,112,32);
+    border: 2px solid rgb(51,51,51);
+    border-radius: 9px;
+    &:hover {
+      background-color: red;
+      transition: background-color 2s;
+    }
+  }
+  @media (max-width: 568px) {
+    margin-top: 320px;
+  }
+}
+.contents {
+  width: 100%;
+  margin: 0, auto;
+}
+#features {
+  padding: 23px;
+  .list {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    }
+  .icon, {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 41px 17px 0px 0px;
+    padding: 13px;
+    color: rgb(243,112,32);
+    .material-icons {
+      transform: scale(2,2);
+      }
+    @media (max-width: 568px) {
+      display: none;
+    }
+    }
+  .discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    @media (max-width: 568px) {
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+      padding: 20px;
+      height: 250px;
+    }
+    }
+  @media (max-width: 568px) {
+    margin-top: 0px;
+  }
+}
+#how-it-works {
+  display: flex;
+  margin-top: 71px;
+  justify-content: center;
+    iframe {
+      max-width: 560px;
+      width: 100%;
+    }
+}
+#pricing {
+  display: flex;
+  flex-direction: row;
+  margin-top: 71px;
+  justify-content: center;
+  text-align: center;
+  padding: 101px;
+  img {
+    width: 250px;
+    height: 170px;
+    border: 3px solid black;
+  }
+  #copper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+  }
+  #platinum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+  }
+  #iridium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+  }
+  .option {
+    font-size: 23px;
+    text-align: center;
+    padding: 7px;
+  }
+  .btn {
+    padding: 13px;
+    width: 97px;
+    &:hover {
+     background-color: red;
+     transition: background-color 2s;
+    }
+  }
+  li {
+    text-align: left;
+  }
+  @media (max-width: 568px) {
+    flex-direction: column;
+    #copper, #platinum, #iridium {
+      max-width: 568px;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+  }
+}
+footer {
+  margin: auto;
+  text-align: center;
+}
